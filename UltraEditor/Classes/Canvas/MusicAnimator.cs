@@ -1,6 +1,6 @@
-﻿namespace UltraEditor.Classes.Canvas;
+﻿namespace UltraEditorStripped.Classes.Canvas;
 
-using UltraEditor.Libraries;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 
 public class MusicAnimator : MonoBehaviour

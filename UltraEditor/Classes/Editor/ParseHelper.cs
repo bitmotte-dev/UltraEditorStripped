@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes.Editor;
+﻿namespace UltraEditorStripped.Classes.Editor;
 
 using System;
 using System.Globalization;

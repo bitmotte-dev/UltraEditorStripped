@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using GameConsole.Commands;
 using System.Collections;
@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using TMPro;
-using UltraEditor.Classes.Canvas;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.Canvas;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 using UnityEngine.UI;
 

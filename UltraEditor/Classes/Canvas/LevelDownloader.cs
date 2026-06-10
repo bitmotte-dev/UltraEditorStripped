@@ -1,7 +1,7 @@
-﻿namespace UltraEditor.Classes.Canvas;
+﻿namespace UltraEditorStripped.Classes.Canvas;
 
 using TMPro;
-using UltraEditor.Classes.Editor;
+using UltraEditorStripped.Classes.Editor;
 using UnityEngine;
 using UnityEngine.UI;
 

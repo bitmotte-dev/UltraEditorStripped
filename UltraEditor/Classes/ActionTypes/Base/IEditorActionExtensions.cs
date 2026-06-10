@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes.ActionTypes.Base;
+﻿namespace UltraEditorStripped.Classes.ActionTypes.Base;
 
 /// <summary> a bunch of coolio extensions for using IEditorActions </summary>
 public static class IEditorActionExtensions

@@ -1,8 +1,8 @@
-﻿namespace UltraEditor.Classes.Canvas;
+﻿namespace UltraEditorStripped.Classes.Canvas;
 
 using System.Linq;
 using TMPro;
-using UltraEditor.Classes.Editor;
+using UltraEditorStripped.Classes.Editor;
 using UnityEngine;
 
 public class PrintAllComponents : MonoBehaviour

@@ -1,11 +1,11 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using System;
 using System.Collections.Generic;
-using UltraEditor.Classes.Canvas;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.Canvas;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
-using static UltraEditor.Classes.MaterialChoser;
+using static UltraEditorStripped.Classes.MaterialChoser;
 
 public class MaterialChoser : MonoBehaviour
 {

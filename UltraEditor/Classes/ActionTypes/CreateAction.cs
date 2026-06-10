@@ -1,6 +1,6 @@
-﻿namespace UltraEditor.Classes.ActionTypes;
+﻿namespace UltraEditorStripped.Classes.ActionTypes;
 
-using UltraEditor.Classes.ActionTypes.Base;
+using UltraEditorStripped.Classes.ActionTypes.Base;
 using UnityEngine;
 
 /// <summary> Action for when we create an obj uwu meow </summary>

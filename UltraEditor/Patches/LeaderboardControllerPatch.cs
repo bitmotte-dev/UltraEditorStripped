@@ -1,7 +1,7 @@
-﻿namespace UltraEditor.Patches;
+﻿namespace UltraEditorStripped.Patches;
 
 using HarmonyLib;
-using UltraEditor.Classes;
+using UltraEditorStripped.Classes;
 
 [HarmonyPatch(typeof(LeaderboardController), "SubmitLevelScore")]
 public static class LeaderboardControllerPatch

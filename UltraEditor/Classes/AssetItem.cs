@@ -1,10 +1,10 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 using UnityEngine.UI;
 

@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Patches;
+﻿namespace UltraEditorStripped.Patches;
 
 using HarmonyLib;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using System.Runtime.InteropServices;
 

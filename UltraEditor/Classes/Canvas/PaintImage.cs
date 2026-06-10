@@ -1,6 +1,6 @@
-﻿namespace UltraEditor.Classes.Canvas;
+﻿namespace UltraEditorStripped.Classes.Canvas;
 
-using UltraEditor.Classes.IO.SaveObjects;
+using UltraEditorStripped.Classes.IO.SaveObjects;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;

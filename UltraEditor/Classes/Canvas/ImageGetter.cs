@@ -1,9 +1,9 @@
-﻿namespace UltraEditor.Classes.Canvas;
+﻿namespace UltraEditorStripped.Classes.Canvas;
 
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UltraEditor.Classes.IO.SaveObjects;
+using UltraEditorStripped.Classes.IO.SaveObjects;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;

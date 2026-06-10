@@ -1,5 +1,5 @@
 ﻿using System;
-using UltraEditor;
+using UltraEditorStripped;
 using UnityEngine;
 
 public class NonDefaultScriptChecker : MonoBehaviour

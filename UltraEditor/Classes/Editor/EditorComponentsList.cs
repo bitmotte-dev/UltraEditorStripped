@@ -1,12 +1,12 @@
-﻿namespace UltraEditor.Classes.Editor;
+﻿namespace UltraEditorStripped.Classes.Editor;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using UltraEditor.Classes.IO.SaveObjects;
+using UltraEditorStripped.Classes.IO.SaveObjects;
 using UnityEngine;
-using NewTeleportObject = UltraEditor.Classes.IO.SaveObjects.TeleportObject;
+using NewTeleportObject = UltraEditorStripped.Classes.IO.SaveObjects.TeleportObject;
 
 public static class EditorComponentsList
 {

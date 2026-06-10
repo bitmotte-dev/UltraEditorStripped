@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes.TempScripts;
+﻿namespace UltraEditorStripped.Classes.TempScripts;
 
 using System;
 using System.Collections.Generic;

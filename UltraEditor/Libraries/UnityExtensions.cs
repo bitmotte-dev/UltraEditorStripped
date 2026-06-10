@@ -1,7 +1,7 @@
-﻿global using static UltraEditor.Libraries.UnityExtensions;
+﻿global using static UltraEditorStripped.Libraries.UnityExtensions;
 global using UnityObject = UnityEngine.Object;
 
-namespace UltraEditor.Libraries;
+namespace UltraEditorStripped.Libraries;
 
 using System.Linq;
 using UnityEngine;

@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes.IO;
+﻿namespace UltraEditorStripped.Classes.IO;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -6,9 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using UltraEditor.Classes.Editor;
-using UltraEditor.Classes.IO.SaveObjects;
-using UltraEditor.Classes.World;
+using UltraEditorStripped.Classes.Editor;
+using UltraEditorStripped.Classes.IO.SaveObjects;
+using UltraEditorStripped.Classes.World;
 using UnityEngine;
 
 public static class Saving

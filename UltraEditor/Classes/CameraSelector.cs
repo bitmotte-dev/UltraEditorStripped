@@ -1,10 +1,10 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using System.Collections.Generic;
-using UltraEditor.Classes.ActionTypes;
-using UltraEditor.Classes.Canvas;
-using UltraEditor.Classes.IO.SaveObjects;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.ActionTypes;
+using UltraEditorStripped.Classes.Canvas;
+using UltraEditorStripped.Classes.IO.SaveObjects;
+using UltraEditorStripped.Libraries;
 using Unity.AI.Navigation;
 using UnityEngine;
 

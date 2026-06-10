@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Libraries;
+﻿namespace UltraEditorStripped.Libraries;
 
 using UnityEngine;
 

@@ -1,7 +1,7 @@
-﻿namespace UltraEditor.Classes.Editor;
+﻿namespace UltraEditorStripped.Classes.Editor;
 
 using System.Collections.Generic;
-using UltraEditor.Classes.IO.SaveObjects;
+using UltraEditorStripped.Classes.IO.SaveObjects;
 using UnityEngine;
 
 public static class LoadingHelper

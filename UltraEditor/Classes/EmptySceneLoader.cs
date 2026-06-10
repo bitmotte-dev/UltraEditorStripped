@@ -1,12 +1,12 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using TMPro;
-using UltraEditor.Classes.IO.SaveObjects;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.IO.SaveObjects;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

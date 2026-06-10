@@ -1,8 +1,8 @@
-﻿namespace UltraEditor.Patches;
+﻿namespace UltraEditorStripped.Patches;
 
 using HarmonyLib;
 using System.Collections;
-using UltraEditor.Classes;
+using UltraEditorStripped.Classes;
 
 [HarmonyPatch]
 public static class SceneHelperPatch

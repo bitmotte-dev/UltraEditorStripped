@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes.Editor;
+﻿namespace UltraEditorStripped.Classes.Editor;
 /// <summary> Static class that returns example scenes for the editor in a .uterus text type </summary>
 public static class ExampleScenes
 {

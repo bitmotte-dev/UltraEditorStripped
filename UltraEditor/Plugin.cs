@@ -1,13 +1,13 @@
-﻿namespace UltraEditor;
+﻿namespace UltraEditorStripped;
 
 using BepInEx;
 using HarmonyLib;
 using System;
 using System.Globalization;
 using System.Threading;
-using UltraEditor.Classes;
-using UltraEditor.Classes.Editor;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes;
+using UltraEditorStripped.Classes.Editor;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 

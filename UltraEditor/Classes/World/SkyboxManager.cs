@@ -1,9 +1,9 @@
-﻿namespace UltraEditor.Classes.World;
+﻿namespace UltraEditorStripped.Classes.World;
 
 using System;
 using System.Reflection;
-using UltraEditor.Classes.Canvas;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.Canvas;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 
 public static class SkyboxManager

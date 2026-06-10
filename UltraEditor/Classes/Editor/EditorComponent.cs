@@ -1,7 +1,7 @@
-﻿namespace UltraEditor.Classes.Editor;
+﻿namespace UltraEditorStripped.Classes.Editor;
 
 using System;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Libraries;
 
 public class EditorComponent
 {

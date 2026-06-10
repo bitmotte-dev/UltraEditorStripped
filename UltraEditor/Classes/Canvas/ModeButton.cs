@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes.Canvas;
+﻿namespace UltraEditorStripped.Classes.Canvas;
 
 using System.Collections.Generic;
 using UnityEngine;

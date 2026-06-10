@@ -1,9 +1,9 @@
-﻿namespace UltraEditor.Classes.IO.SaveObjects;
+﻿namespace UltraEditorStripped.Classes.IO.SaveObjects;
 
 using HarmonyLib;
 using System.Collections.Generic;
-using UltraEditor.Classes.Editor;
-using UltraEditor.Classes.TempScripts;
+using UltraEditorStripped.Classes.Editor;
+using UltraEditorStripped.Classes.TempScripts;
 using Unity.AI.Navigation;
 using UnityEngine;
 

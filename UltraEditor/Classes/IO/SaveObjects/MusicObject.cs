@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes.IO.SaveObjects;
+﻿namespace UltraEditorStripped.Classes.IO.SaveObjects;
 
 using System;
 using System.Collections;

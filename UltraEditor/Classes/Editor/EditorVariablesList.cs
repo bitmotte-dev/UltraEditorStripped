@@ -1,9 +1,9 @@
-﻿namespace UltraEditor.Classes.Editor;
+﻿namespace UltraEditorStripped.Classes.Editor;
 
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using UltraEditor.Classes.IO.SaveObjects;
+using UltraEditorStripped.Classes.IO.SaveObjects;
 using UnityEngine;
 
 public class SavableVariableObject(FieldInfo variable, Type parentType)

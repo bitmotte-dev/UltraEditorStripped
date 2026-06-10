@@ -1,7 +1,7 @@
-﻿namespace UltraEditor.Classes.Canvas;
+﻿namespace UltraEditorStripped.Classes.Canvas;
 
 using System.Collections.Generic;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 
 public class SpawnOnce : MonoBehaviour

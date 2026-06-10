@@ -1,8 +1,8 @@
-﻿namespace UltraEditor.Classes.IO.SaveObjects;
+﻿namespace UltraEditorStripped.Classes.IO.SaveObjects;
 
 using System.Collections.Generic;
 using System.Linq;
-using UltraEditor.Classes.Editor;
+using UltraEditorStripped.Classes.Editor;
 using Unity.AI.Navigation;
 using UnityEngine;
 

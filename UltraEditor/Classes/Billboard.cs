@@ -1,10 +1,10 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UltraEditor.Classes.IO.SaveObjects;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.IO.SaveObjects;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 
 public class Billboard : MonoBehaviour

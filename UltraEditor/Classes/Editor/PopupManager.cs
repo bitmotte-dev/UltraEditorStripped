@@ -1,6 +1,6 @@
-﻿namespace UltraEditor.Classes.Editor;
+﻿namespace UltraEditorStripped.Classes.Editor;
 
-using UltraEditor.Classes.Canvas;
+using UltraEditorStripped.Classes.Canvas;
 using UnityEngine;
 
 public static class PopupManager

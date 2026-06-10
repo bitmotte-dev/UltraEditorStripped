@@ -1,9 +1,9 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using System;
 using System.Collections.Generic;
 using System.Text;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 
 public class ExportDebug : MonoBehaviour

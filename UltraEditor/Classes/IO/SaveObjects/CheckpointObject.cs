@@ -1,9 +1,9 @@
-﻿namespace UltraEditor.Classes.IO.SaveObjects;
+﻿namespace UltraEditorStripped.Classes.IO.SaveObjects;
 
 using System.Collections;
 using System.Collections.Generic;
-using UltraEditor.Classes.Editor;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.Editor;
+using UltraEditorStripped.Libraries;
 using UnityEngine;
 
 public class CheckpointObject : SavableObject

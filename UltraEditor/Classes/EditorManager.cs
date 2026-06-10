@@ -1,4 +1,4 @@
-﻿namespace UltraEditor.Classes;
+﻿namespace UltraEditorStripped.Classes;
 
 using BlackholeChaos.Scripts;
 using System;
@@ -8,12 +8,12 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using TMPro;
-using UltraEditor.Classes.ActionTypes;
-using UltraEditor.Classes.ActionTypes.Base;
-using UltraEditor.Classes.Editor;
-using UltraEditor.Classes.IO;
-using UltraEditor.Classes.IO.SaveObjects;
-using UltraEditor.Libraries;
+using UltraEditorStripped.Classes.ActionTypes;
+using UltraEditorStripped.Classes.ActionTypes.Base;
+using UltraEditorStripped.Classes.Editor;
+using UltraEditorStripped.Classes.IO;
+using UltraEditorStripped.Classes.IO.SaveObjects;
+using UltraEditorStripped.Libraries;
 using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.Events;
