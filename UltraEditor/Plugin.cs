@@ -10,6 +10,8 @@ using UltraEditorStripped.Classes.Editor;
 using UltraEditorStripped.Libraries;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.SceneManagement;
+
 
 [BepInPlugin(GUID, Name, Version)]
 public class Plugin : BaseUnityPlugin
@@ -81,6 +83,8 @@ public class Plugin : BaseUnityPlugin
 
         var harmony = new Harmony("duviz.ultrakill.ultraeditor");
         harmony.PatchAll();
+
+        SceneManager.sceneLoaded += SceneUtility.OnSceneLoad;
 
         gameObject.hideFlags = HideFlags.DontSaveInEditor;
     }
