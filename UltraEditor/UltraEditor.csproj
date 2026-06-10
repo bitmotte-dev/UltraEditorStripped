@@ -43,11 +43,7 @@
       </PackageReference>
 
 		<!-- Ultrakill DLL'S -->
-		<Reference Include="Assembly-CSharp">
-			<HintPath>$(ManagedPath)\Assembly-CSharp.dll</HintPath>
-            <Private>false</Private>
-            <CopyLocal>false</CopyLocal>
-		</Reference>
+
 		<Reference Include="plog">
 			<HintPath>$(ManagedPath)\plog.dll</HintPath>
 		</Reference>
@@ -71,6 +67,14 @@
 		<Reference Include="Unity.ResourceManager OwO">
 			<HintPath>$(ManagedPath)\Unity.ResourceManager.dll</HintPath>
 		</Reference>
+
+		<!-- i dontr fucking care anymore STOP MAKING ME MAKE NUGET PACKAGES-->
+    <Reference Include="lib/Unity.Addressables.dll" />
+    <Reference Include="lib/UnityEngine.AssetBundleModule.dll" />
+    <Reference Include="lib/Unity.ResourceManager.dll" />
+
+    <PackageReference Include="bitmotte.com.ULTRAKILL.Assemblies" Version="17.1.1" />
+    <PackageReference Include="bitmotte.com.Unity.TextMeshPro" Version="2022.3.29" />
 
       <Publicize Include="Assembly-CSharp" />
 	</ItemGroup>
