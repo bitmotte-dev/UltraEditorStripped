@@ -6,7 +6,6 @@ using System;
 using System.Globalization;
 using System.Threading;
 using UltraEditorStripped.Classes;
-using UltraEditorStripped.Classes.Editor;
 using UltraEditorStripped.Libraries;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -78,8 +77,6 @@ public class Plugin : BaseUnityPlugin
         Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
         BundlesManager.Load();
-        EditorVariablesList.SetupEditorVariables();
-        EditorComponentsList.SetupEditorComponents();
 
         var harmony = new Harmony("duviz.ultrakill.ultraeditor");
         harmony.PatchAll();
@@ -92,17 +89,11 @@ public class Plugin : BaseUnityPlugin
     public void Start()
     {
         // load the assets window
-        AssetsWindowManager.Load();
         EmptySceneLoader.Load();
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(EditorOpenKey) && (!SceneHelper.CurrentScene.StartsWith(EditorManager.EditorSceneName) || EditorManager.canOpenEditor || EmptySceneLoader.forceLevelCanOpenEditor || (EditorManager.Instance != null && EditorManager.Instance.editorCanvas.activeInHierarchy)) && SceneHelper.PendingScene == null)
-        {
-            EditorManager.Create();
-        }
-
         if (SceneHelper.CurrentScene == "Main Menu" && SceneHelper.PendingScene == null && !SeenWelcomeMessage)
         {
             if (Preferences.GetString(LastPlayedVersionPref) != GetVersion().ToString())

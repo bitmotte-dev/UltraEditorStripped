@@ -11,7 +11,7 @@ public static class SceneHelperPatch
     [HarmonyPrefix] [HarmonyPatch(typeof(SceneHelper), "LoadSceneCoroutine")]
     public static bool LoadScenePatch(ref IEnumerator __result, string sceneName)
     {
-        if (sceneName.StartsWith(EditorManager.EditorSceneName))
+        if (sceneName.StartsWith("EditorManager.EditorSceneName"))
         {
             __result = EmptySceneLoader.LoadLevelAsync();
             return false;
@@ -23,7 +23,7 @@ public static class SceneHelperPatch
     [HarmonyPrefix] [HarmonyPatch(typeof(GetMissionName), "GetMissionNumberOnly")]
     public static bool FixMissionNum(ref string __result)
     {
-        if (SceneHelper.CurrentScene.StartsWith(EditorManager.EditorSceneName))
+        if (SceneHelper.CurrentScene.StartsWith("EditorManager.EditorSceneName"))
         {
             __result = "C";
             return false;
@@ -35,7 +35,7 @@ public static class SceneHelperPatch
     [HarmonyPrefix] [HarmonyPatch(typeof(GetMissionName), "GetMissionNameOnly")]
     public static bool FixMissionNameOnly(ref string __result)
     {
-        if (SceneHelper.CurrentScene.StartsWith(EditorManager.EditorSceneName))
+        if (SceneHelper.CurrentScene.StartsWith("EditorManager.EditorSceneName"))
         {
             __result = MapInfoBase.Instance.levelName;
             return false;
@@ -47,7 +47,7 @@ public static class SceneHelperPatch
     [HarmonyPrefix] [HarmonyPatch(typeof(GetMissionName), "GetMission")]
     public static bool FixMissionName(ref string __result)
     {
-        if (SceneHelper.CurrentScene.StartsWith(EditorManager.EditorSceneName))
+        if (SceneHelper.CurrentScene.StartsWith("EditorManager.EditorSceneName"))
         {
             __result = MapInfoBase.Instance.levelName;
             return false;

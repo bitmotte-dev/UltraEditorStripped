@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using TMPro;
-using UltraEditorStripped.Classes.IO.SaveObjects;
 using UltraEditorStripped.Libraries;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -56,7 +55,7 @@ public static class EmptySceneLoader
     public static IEnumerator LoadLevelAsync()
     {
         Plugin.LogInfo("Loading Empty Scene.");
-        SceneHelper.PendingScene = EditorManager.EditorSceneName;
+        SceneHelper.PendingScene = "EditorManager.EditorSceneName";
         SceneHelper.Instance.loadingBlocker.SetActive(true);
         if (!forceEditor && forceSave != "") SceneHelper.SetLoadingSubtext("Loading level...");
         else SceneHelper.SetLoadingSubtext("Loading editor...");
@@ -71,12 +70,12 @@ public static class EmptySceneLoader
             while (!_loaded) yield return null;
         }
 
-        if (SceneHelper.CurrentScene.StartsWith(EditorManager.EditorSceneName)) 
+        if (SceneHelper.CurrentScene.StartsWith("EditorManager.EditorSceneName")) 
             SceneHelper.LastScene = SceneHelper.CurrentScene;
         
-        SceneHelper.CurrentScene = EditorManager.EditorSceneName;
+        SceneHelper.CurrentScene = "EditorManager.EditorSceneName";
         if (forceLevelGUID != "" && forceSave == "?" && !forceEditor)
-            SceneHelper.CurrentScene = EditorManager.EditorSceneName+"."+forceLevelGUID;
+            SceneHelper.CurrentScene = "EditorManager.EditorSceneName"+"."+forceLevelGUID;
 
         AsyncOperation sceneload = SceneManager.LoadSceneAsync("Assets/ULTRAEDITOR/Empty Editor Scene.unity");
 
@@ -105,7 +104,6 @@ public static class EmptySceneLoader
     {
         if (forceEditor)
         {
-            EditorManager.canOpenEditor = false;
             forceLevelCanOpenEditor = false;
             while (!NewMovement.Instance.activated && SceneHelper.PendingScene == null) { yield return null; }
             OpenEditor();
@@ -114,19 +112,14 @@ public static class EmptySceneLoader
 
         else if (forceSave != "")
         {
-            EditorManager.canOpenEditor = false;
-            EditorManager.Create();
-            EditorManager.DeleteScene(true);
             string levelName = forceSave.Replace(".uterus", "");
             if (forceSave != "?")
             {
-                EditorManager.Instance.LoadShit(forceSave);
                 forceLevelCanOpenEditor = false;
                 forceLevelLayer = "CUSTOM LEVEL";
             }
             else
             {
-                EditorManager.Instance.LoadSceneFile(forceSaveData);
                 levelName = forceLevelName;
 
                 int pt = int.Parse(pTime);
@@ -150,23 +143,11 @@ public static class EmptySceneLoader
                 secrets.Add(secret.gameObject);
                 ind++;
             }
-            LevelInfoObject lio = GameObject.FindObjectOfType<LevelInfoObject>();
             StatsManager.Instance.secretObjects = secrets.ToArray();
-            EditorManager.Instance.CreateUI();
             StockMapInfo.Instance.levelName = levelName.ToUpper();
             StockMapInfo.Instance.layerName = StockMapInfo.Instance.layerName.Replace("EMPTY", forceLevelLayer);
             StockMapInfo.Instance.assets.LargeText = levelName.ToUpper();
-            string[] tips = ["Welcome!", "Hi!", $"Welcome to {levelName}", "I'm tired.", "Hi! I'm a terminal", "I despise you", "I don't like you", "Entertain me", "Get away", "Disappear", "Get out of my sight", "Entry 17", "I live in despair", ":3", ":c", "You piss me of", "Shut the fuck up", "I hate people who hate people...", "...but I hate you more", "duviz, why server no work"];
-            if (lio != null)
-            {
-                StockMapInfo.Instance.tipOfTheDay = new ScriptableObjects.TipOfTheDay() { tip = lio.tipOfTheDay };
-                StockMapInfo.Instance.layerName = lio.levelLayer;
-                if (lio.levelName != "%SAVE%")
-                    StockMapInfo.Instance.levelName = lio.levelName;
-                GameObject.FindObjectOfType<FinalDoorOpener>(true).startMusic = lio.playMusicOnDoorOpen;
-            }
-            else
-                StockMapInfo.Instance.tipOfTheDay = new ScriptableObjects.TipOfTheDay() { tip = tips[UnityEngine.Random.Range(0, tips.Length)] };
+
             ShopZone[] sz = UnityObject.FindObjectsOfType<ShopZone>(true);
             foreach (var s in sz)
             {
@@ -191,8 +172,5 @@ public static class EmptySceneLoader
     public static void OpenEditor()
     {
         if (SceneHelper.PendingScene != null) return;
-
-        EditorManager.canOpenEditor = true;
-        EditorManager.Create();
     }
 }
