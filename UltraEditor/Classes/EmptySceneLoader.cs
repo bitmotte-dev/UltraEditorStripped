@@ -77,7 +77,7 @@ public static class EmptySceneLoader
         if (forceLevelGUID != "" && forceSave == "?" && !forceEditor)
             SceneHelper.CurrentScene = "EditorManager.EditorSceneName"+"."+forceLevelGUID;
 
-        AsyncOperation sceneload = SceneManager.LoadSceneAsync("Assets/ULTRAEDITOR/Empty Editor Scene.unity");
+        AsyncOperation sceneload = SceneManager.LoadSceneAsync("Assets/ModTechnicalName/Scenes/TestLevel/Empty Editor Scene.unity");
 
         // wait til its loaded 
         while (!sceneload.isDone) yield return null;

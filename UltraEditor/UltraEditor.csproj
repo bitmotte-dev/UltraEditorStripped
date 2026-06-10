@@ -31,7 +31,6 @@
 		<!-- Embed the assetbundles into the dll. -->
 		<EmbeddedResource Include="Assets\emptyscene.bundle" />
 		<EmbeddedResource Include="Assets\editorcanvas.bundle" />
-		<EmbeddedResource Include="Assets\sample.bundle" />
 
 		<!-- Packages -->
 		<PackageReference Include="BepInEx.Core" Version="5.4.21" />
